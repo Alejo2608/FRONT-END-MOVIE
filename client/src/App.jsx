@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import PageNotFound from './components/PageNotFound/PageNotFound'
 import Login from './components/Login/Login'
 import Signup from './components/Register/Register'
+import Form from './components/Form/Form'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/regi' element={<Signup />} />
+            <Route path='/cre' element={<Form />} />
             <Route path='/movie/:imdbID' element={<MovieDetail />} />
             <Route element={<PageNotFound />} />
           </Routes>
