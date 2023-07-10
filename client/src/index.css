@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.e{
+    color: white;
+    font-size: xx-large;
+    font-weight: 600;
+}

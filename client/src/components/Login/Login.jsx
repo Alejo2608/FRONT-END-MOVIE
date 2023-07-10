@@ -22,7 +22,7 @@ const Login = () => {
 			localStorage.setItem("imgPerfil", JSON.stringify(res.user.imgPerfil));
 			localStorage.setItem("username", JSON.stringify(res.user.username));
 			localStorage.setItem("rol", JSON.stringify(res.user.rol));
-			navigate('/profile');
+			navigate('/home');
 		} catch (error) {
 			if (
 				error.response &&
@@ -38,12 +38,12 @@ const Login = () => {
 		<div className='w-full min-h-screen flex justify-center items-center'>
 			<div className='w-full h-[31rem] m-8 grid grid-cols-5 rounded-lg shadow-md shadow-black/20'>
 			<div className='col-span-2 flex flex-col bg-black justify-center items-center rounded-l-lg'>
-				<h1 className="text-4xl self-center text-slate-100 mb-3">BIENVENIDO</h1>
+				<h1 className="e">BIENVENIDO</h1>
 				<img src={uvR} alt="img_not_fund" className="h-60"/>
 			</div>
         	<div className='col-span-3 flex flex-col justify-center items-center rounded-r-lg'>
 					<form className='flex flex-col items-center' onSubmit={handleSubmit}>
-						<h1 className="text-4xl text-blue ...">Inicia Sesion</h1>
+						<h1 className="e">Inicia Sesion</h1>
 						<input
 							type="email"
 							placeholder="Email"
